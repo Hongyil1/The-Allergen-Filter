@@ -39,26 +39,26 @@ def index(request):
         else:
             results = ""
 
-    if 'item_search' in request.GET:  # If the form is submitted
+    if 'search' in request.GET:  # If the form is submitted
         item_name = request.GET.get('item_search')
         item_category = request.GET.get('category')
         item_allergens = request.GET.get('allergens')
         print("name: ", item_name, " category: ", item_category, "allergens: ", item_allergens)
-        allergen_list = item_allergens.split(",")
+        allergen_list = item_allergens.split(",") if item_allergens else []
 
-        products_not_allergen = Product.objects.all()
+        results = Product.objects.all()
         for allergen in allergen_list:
-            products_not_allergen = products_not_allergen.filter(~Q(allergens__icontains=allergen))
-            # print("aaaa")
-            # print(len(products_not_allergen))
+            results = results.filter(~Q(allergens__icontains=allergen))
+            #print(#"aaaa")
+            #print(len(results))
 
         if item_category != "":
-            if len(products_not_allergen) != 0:
-                # print("ccc")
-                results = products_not_allergen.filter(category__icontains=item_category)
-                print("results: ", results)
-                if len(results) != 0:
-                    # print("ddd")
-                    results = results.filter(name__icontains=item_name)
+            if len(results) != 0:
+                #print("ccc")
+                results = results.filter(category__name__icontains=item_category)
+                #print("results: ", results)
+        if item_name and len(results) != 0:
+            #print("ddd")
+            results = results.filter(name__icontains=item_name)
 
     return render_to_response('allergyshop/index.html', {'results': results, 'products': products})
