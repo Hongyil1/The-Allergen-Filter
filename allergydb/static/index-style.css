@@ -13,10 +13,10 @@
 }
 
 .logo {
-  background-color: #13C42B;
+  background-color: #f55e61;
   width: 37px;
   height: 37px;
-  border: 2px solid #13C42B;
+  border: 2px solid #f55e61;
   border-radius: 5px;
   float: left;
   margin-right: 12px;
@@ -25,7 +25,7 @@
 .inner-logo {
   width: 32px;
   height: 32px;
-  background-color: #13C42B;
+  background-color: #f55e61;
   border: 2px solid white;
   border-radius: 5px;
 }
