@@ -1,0 +1,8 @@
+<h1>Enter search term and allergies</h1>
+
+<form action="{% url 'bclookup:bclookup' %}" method="post">
+{% csrf_token %}
+<input type="text" name="search">
+<input type="text" name="allergies">
+<input type="submit" value="Lookup">
+</form>
