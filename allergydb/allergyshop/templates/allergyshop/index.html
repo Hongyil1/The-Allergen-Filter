@@ -41,6 +41,8 @@
         </div>
     </div>
       <div class = "container search-cat">
+
+        <!--Barcode search-->
         <div class= "row">
           <form action="." method="GET">
             <div class="col-md-2 col-sm-2">
@@ -60,103 +62,107 @@
         <div class = "row">
           <h4 class="col-md-12">or</h4>
         </div>
-        <div class = "row">
-          <div class="col-md-2 col-sm-3">
-            <h4>Product name:</h4>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <div class = "input-group">
-              <input type = "text" class = "form-control" placeholder = "Search product...">
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-3">
-            <h4>Category:</h4>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <select class="form-control">
-              <option value="">Select one...</option>
-              <option value="fruit">Fruit</option>
-              <option value="vegetable">Vegetable</option>
-              <option value="meat">Meat</option>
-              <option value="seafood">Seafood</option>
-              <option value="deli">Deli</option>
-              <option value="bakery">Bakery</option>
-              <option value="dairy">Dairy</option>
-              <option value="eggs">Eggs</option>
-              <option value="fridge">Fridge</option>
-              <option value="pantry">Pantry</option>
-              <option value="freezer">Freezer</option>
-              <option value="drinks">Drinks</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1 col-sm-2">
-            <h4>Allergen:</h4>
-          </div>
-          <div class="col-md-8 col-sm-10">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-            <input type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
-            <datalist id="allergens">
-              <option value="Gluten">
-              <option value="Crustacean">
-              <option value="Eggs">
-              <option value="Fish">
-              <option value="Peanuts">
-              <option value="Soybean">
-              <option value="Milk">
-              <option value="Nuts">
-              <option value="Celery">
-              <option value="Mustard">
-              <option value="Sesame">
-              <option value="Lupin">
-              <option value="Molluscs">
-            </datalist>
-            <script>
-              var datalist = jQuery('datalist');
-              var options = jQuery('datalist option');
-              var optionsarray = jQuery.map(options ,function(option) {
-              		return option.value;
-              });
-              var input = jQuery('input[list]');
-              var inputcommas = (input.val().match(/,/g)||[]).length;
-              var separator = ',';
 
-              function filldatalist(prefix) {
-              	if (input.val().indexOf(separator) > -1 && options.length > 0) {
-              		datalist.empty();
-              		for (i=0; i < optionsarray.length; i++ ) {
-              			if (prefix.indexOf(optionsarray[i]) < 0 ) {
-              				datalist.append('<option value="'+prefix+optionsarray[i]+'">');
-              			}
-              		}
-              	}
-              }
-              input.bind("change paste keyup",function() {
-              	var inputtrim = input.val().replace(/^\s+|\s+$/g, "");
-                //console.log(inputtrim);
-              	var currentcommas = (input.val().match(/,/g)||[]).length;
-                //console.log(currentcommas);
-              	if (inputtrim != input.val()) {
-              		if (inputcommas != currentcommas) {
-              			var lsIndex = inputtrim.lastIndexOf(separator);
-              			var str = (lsIndex != -1) ? inputtrim.substr(0, lsIndex)+", " : "";
-              			filldatalist(str);
-              			inputcommas = currentcommas;
-              		}
-              		input.val(inputtrim);
-              	}
-              });
-            </script>
-          </div>
-          <div class="col-md-2 col-sm-12">
-            <button class = "btn btn-default">Search</button>
+        <!--Advanced Search-->
+        <form action="." method="GET">
+          <div class = "row">
+              <div class="col-md-2 col-sm-3">
+                <h4>Product name:</h4>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                <div class = "input-group">
+                  <input name="item_search" type = "text" class = "form-control" placeholder = "Search product...">
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-3">
+                <h4>Category:</h4>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                <select name="category" class="form-control">
+                  <option value="">Select one...</option>
+                  <option value="fruit">Fruit</option>
+                  <option value="vegetable">Vegetable</option>
+                  <option value="meat">Meat</option>
+                  <option value="seafood">Seafood</option>
+                  <option value="deli">Deli</option>
+                  <option value="bakery">Bakery</option>
+                  <option value="dairy">Dairy</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="fridge">Fridge</option>
+                  <option value="pantry">Pantry</option>
+                  <option value="freezer">Freezer</option>
+                  <option value="drinks">Drinks</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1 col-sm-2">
+                <h4>Allergen:</h4>
+              </div>
+              <div class="col-md-8 col-sm-10">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+                <input name="allergens" type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
+                <datalist id="allergens">
+                  <option value="Gluten">
+                  <option value="Crustacean">
+                  <option value="Eggs">
+                  <option value="Fish">
+                  <option value="Peanuts">
+                  <option value="Soybean">
+                  <option value="Milk">
+                  <option value="Nuts">
+                  <option value="Celery">
+                  <option value="Mustard">
+                  <option value="Sesame">
+                  <option value="Lupin">
+                  <option value="Molluscs">
+                </datalist>
+                <script>
+                  var datalist = jQuery('datalist');
+                  var options = jQuery('datalist option');
+                  var optionsarray = jQuery.map(options ,function(option) {
+                        return option.value;
+                  });
+                  var input = jQuery('input[list]');
+                  var inputcommas = (input.val().match(/,/g)||[]).length;
+                  var separator = ',';
+
+                  function filldatalist(prefix) {
+                    if (input.val().indexOf(separator) > -1 && options.length > 0) {
+                        datalist.empty();
+                        for (i=0; i < optionsarray.length; i++ ) {
+                            if (prefix.indexOf(optionsarray[i]) < 0 ) {
+                                datalist.append('<option value="'+prefix+optionsarray[i]+'">');
+                            }
+                        }
+                    }
+                  }
+                  input.bind("change paste keyup",function() {
+                    var inputtrim = input.val().replace(/^\s+|\s+$/g, "");
+                    //console.log(inputtrim);
+                    var currentcommas = (input.val().match(/,/g)||[]).length;
+                    //console.log(currentcommas);
+                    if (inputtrim != input.val()) {
+                        if (inputcommas != currentcommas) {
+                            var lsIndex = inputtrim.lastIndexOf(separator);
+                            var str = (lsIndex != -1) ? inputtrim.substr(0, lsIndex)+", " : "";
+                            filldatalist(str);
+                            inputcommas = currentcommas;
+                        }
+                        input.val(inputtrim);
+                    }
+                  });
+                </script>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <button type="submit" class = "btn btn-default">Search</button>
+              </div>
           </div>
         </form>
-      </div>
+
 
       <!--Search Results-->
       <div class="container search-results">
