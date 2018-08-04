@@ -35,122 +35,133 @@
           <div class="col-md-2">
             <h4>Barcode:</h4>
           </div>
-          <div class="col-md-3">
-            <div class = "input-group">
-              <input type = "text" class = "barcode-search form-control" placeholder = "Barcode">
+
+          <!--Barcode Search Button-->
+          <form method="GET" action=".">
+            <div class="col-md-3">
+              <div class = "input-group">
+                <input name="barcode_search" type = "text" class = "barcode-search form-control" placeholder = "Barcode">
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <button class = "bs btn btn-default">Search</button>
-          </div>
+            <div class="col-md-2">
+              <button class = "bs btn btn-default" type="submit" >Search</button>
+            </div>
+          </form>
         </div>
+
         <div class = "row">
           <h4 class="col-md-12">or</h4>
         </div>
-        <div class = "row">
-          <div class="col-md-2">
-            <h4>Product name:</h4>
-          </div>
-          <div class="col-md-3">
-            <div class = "input-group">
-              <input type = "text" class = "form-control" placeholder = "Search product...">
+
+        <!--Advanced Search Button-->
+        <form method="GET" action=".">
+          <div class = "row">
+            <div class="col-md-2">
+              <h4>Product name:</h4>
+            </div>
+            <div class="col-md-3">
+              <div class = "input-group">
+                <input name="item_search" type = "text" class = "form-control" placeholder = "Search product...">
+              </div>
+            </div>
+            <div class="col-md-1">
+              <h4>Category:</h4>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control", name="category">
+                <option>Fruit</option>
+                <option>Vegetable</option>
+                <option>Meat</option>
+                <option>Seafood</option>
+                <option>Deli</option>
+                <option>Bakery</option>
+                <option>Dairy</option>
+                <option>Eggs</option>
+                <option>Fridge</option>
+                <option>Pantry</option>
+                <option>Freezer</option>
+                <option>Drinks</option>
+              </select>
+            </div>
+            <div class="col-md-3">
             </div>
           </div>
-          <div class="col-md-1">
-            <h4>Category:</h4>
-          </div>
-          <div class="col-md-3">
-            <select class="form-control">
-              <option>Fruit</option>
-              <option>Vegetable</option>
-              <option>Meat</option>
-              <option>Seafood</option>
-              <option>Deli</option>
-              <option>Bakery</option>
-              <option>Dairy</option>
-              <option>Eggs</option>
-              <option>Fridge</option>
-              <option>Pantry</option>
-              <option>Freezer</option>
-              <option>Drinks</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            <h4>Allergen:</h4>
-          </div>
-          <div class="col-md-8">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-            <input type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
-            <datalist id="allergens">
-              <option value="Gluten">
-              <option value="Crustacean">
-              <option value="Eggs">
-              <option value="Fish">
-              <option value="Peanuts">
-              <option value="Soybean">
-              <option value="Milk">
-              <option value="Nuts">
-              <option value="Celery">
-              <option value="Mustard">
-              <option value="Sesame">
-              <option value="Lupin">
-              <option value="Molluscs">
-            </datalist>
-            <script>
-              var datalist = jQuery('datalist');
-              var options = jQuery('datalist option');
-              var optionsarray = jQuery.map(options ,function(option) {
-              		return option.value;
-              });
-              var input = jQuery('input[list]');
-              var inputcommas = (input.val().match(/,/g)||[]).length;
-              var separator = ',';
+          <div class="row">
+            <div class="col-md-1">
+              <h4>Allergen:</h4>
+            </div>
+            <div class="col-md-8">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+              <input name="allergens" type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
+              <datalist id="allergens">
+                <option value="Gluten">
+                <option value="Crustacean">
+                <option value="Eggs">
+                <option value="Fish">
+                <option value="Peanuts">
+                <option value="Soybean">
+                <option value="Milk">
+                <option value="Nuts">
+                <option value="Celery">
+                <option value="Mustard">
+                <option value="Sesame">
+                <option value="Lupin">
+                <option value="Molluscs">
+              </datalist>
+              <script>
+                var datalist = jQuery('datalist');
+                var options = jQuery('datalist option');
+                var optionsarray = jQuery.map(options ,function(option) {
+                      return option.value;
+                });
+                var input = jQuery('input[list]');
+                var inputcommas = (input.val().match(/,/g)||[]).length;
+                var separator = ',';
 
-              function filldatalist(prefix) {
-              	if (input.val().indexOf(separator) > -1 && options.length > 0) {
-              		datalist.empty();
-              		for (i=0; i < optionsarray.length; i++ ) {
-              			if (prefix.indexOf(optionsarray[i]) < 0 ) {
-              				datalist.append('<option value="'+prefix+optionsarray[i]+'">');
-              			}
-              		}
-              	}
-              }
-              input.bind("change paste keyup",function() {
-              	var inputtrim = input.val().replace(/^\s+|\s+$/g, "");
-                //console.log(inputtrim);
-              	var currentcommas = (input.val().match(/,/g)||[]).length;
-                //console.log(currentcommas);
-              	if (inputtrim != input.val()) {
-              		if (inputcommas != currentcommas) {
-              			var lsIndex = inputtrim.lastIndexOf(separator);
-              			var str = (lsIndex != -1) ? inputtrim.substr(0, lsIndex)+", " : "";
-              			filldatalist(str);
-              			inputcommas = currentcommas;
-              		}
-              		input.val(inputtrim);
-              	}
-              });
-            </script>
+                function filldatalist(prefix) {
+                  if (input.val().indexOf(separator) > -1 && options.length > 0) {
+                      datalist.empty();
+                      for (i=0; i < optionsarray.length; i++ ) {
+                          if (prefix.indexOf(optionsarray[i]) < 0 ) {
+                              datalist.append('<option value="'+prefix+optionsarray[i]+'">');
+                          }
+                      }
+                  }
+                }
+                input.bind("change paste keyup",function() {
+                  var inputtrim = input.val().replace(/^\s+|\s+$/g, "");
+                  //console.log(inputtrim);
+                  var currentcommas = (input.val().match(/,/g)||[]).length;
+                  //console.log(currentcommas);
+                  if (inputtrim != input.val()) {
+                      if (inputcommas != currentcommas) {
+                          var lsIndex = inputtrim.lastIndexOf(separator);
+                          var str = (lsIndex != -1) ? inputtrim.substr(0, lsIndex)+", " : "";
+                          filldatalist(str);
+                          inputcommas = currentcommas;
+                      }
+                      input.val(inputtrim);
+                  }
+                });
+              </script>
+            </div>
+            <div class="col-md-2">
+              <button class = "btn btn-default" type="submit">Search</button>
+            </div>
           </div>
-          <div class="col-md-2">
-            <button class = "btn btn-default">Search</button>
-          </div>
-        </div>
+        </form>
       </div>
+
+      <!--Search Results-->
       <div class="container search-results">
         <h3>Search Results:</h3>
         <ul class="result-items">
-		{% for product in products %}
+		{% for result in results %}
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
-              <h3>{{ product.name }}</h3>
-              <img src="{{ product.picture }}" height="100px">
+              <h3>{{ result.name }}</h3>
+              <img src="{{ result.picture }}" height="100px">
               <h4>Available in</h4>
               <ul>
                 <li><a href="#">Woolworths</a></li>
