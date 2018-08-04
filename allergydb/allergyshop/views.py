@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Allergen, Store, Product 
+from .models import Category, Allergen, Store, Product
 from django.shortcuts import render_to_response
 
 from django.db.models import Q
