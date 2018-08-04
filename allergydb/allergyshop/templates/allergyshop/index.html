@@ -33,17 +33,17 @@
       <div class = "container search-cat">
         <div class= "row">
           <div class="col-md-2">
-            <h4>Search Barcode:</h4>
+            <h4>Barcode:</h4>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <div class = "input-group">
               <input type = "text" class = "barcode-search form-control" placeholder = "Barcode">
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-2">
+            <button class = "bs btn btn-default">Search</button>
           </div>
         </div>
-        <button class = "bs btn btn-default">Search</button>
         <div class = "row">
           <h4 class="col-md-12">or</h4>
         </div>
@@ -51,15 +51,15 @@
           <div class="col-md-2">
             <h4>Product name:</h4>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <div class = "input-group">
               <input type = "text" class = "form-control" placeholder = "Search product...">
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <h4>Category:</h4>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <select class="form-control">
               <option>Fruit</option>
               <option>Vegetable</option>
@@ -75,17 +75,18 @@
               <option>Drinks</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
           </div>
         </div>
-        <div class="allergens">
-          <div class="row">
-            <h4 class="col-md-10 col-xs-6">Ingredients to avoid:</h4>
-            <a href="#" class="col-md-2 col-xs-6" onclick="unselect()">Unselect all</a>
+        <div class="row">
+          <div class="col-md-1">
+            <h4>Allergen:</h4>
           </div>
-          <div>
-            <input list="allergens-list" placeholder="Allergen">
-            <datalist id="allergens-list">
+          <div class="col-md-8">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+            <input type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
+            <datalist id="allergens">
               <option value="Gluten">
               <option value="Crustacean">
               <option value="Eggs">
@@ -100,24 +101,47 @@
               <option value="Lupin">
               <option value="Molluscs">
             </datalist>
-            <!--<ul id="allergens-list">
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen0" name="gluten">Gluten</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen1" name="crustacean">Crustacean</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen2" name="eggs">Eggs</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen3" name="fish">Fish</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen4" name="peanuts">Peanuts</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen5" name="soybean">Soybeans</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen6" name="milk">Milk</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen7" name="nuts">Nuts</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen8" name="celery">Celery</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen9" name="mustard">Mustard</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen10" name="sesame">Sesame</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen11" name="lupin">Lupin</label></li>
-              <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen12" name="molluscs">Molluscs</label></li>
-            </ul>-->
+            <script>
+              var datalist = jQuery('datalist');
+              var options = jQuery('datalist option');
+              var optionsarray = jQuery.map(options ,function(option) {
+              		return option.value;
+              });
+              var input = jQuery('input[list]');
+              var inputcommas = (input.val().match(/,/g)||[]).length;
+              var separator = ',';
+
+              function filldatalist(prefix) {
+              	if (input.val().indexOf(separator) > -1 && options.length > 0) {
+              		datalist.empty();
+              		for (i=0; i < optionsarray.length; i++ ) {
+              			if (prefix.indexOf(optionsarray[i]) < 0 ) {
+              				datalist.append('<option value="'+prefix+optionsarray[i]+'">');
+              			}
+              		}
+              	}
+              }
+              input.bind("change paste keyup",function() {
+              	var inputtrim = input.val().replace(/^\s+|\s+$/g, "");
+                //console.log(inputtrim);
+              	var currentcommas = (input.val().match(/,/g)||[]).length;
+                //console.log(currentcommas);
+              	if (inputtrim != input.val()) {
+              		if (inputcommas != currentcommas) {
+              			var lsIndex = inputtrim.lastIndexOf(separator);
+              			var str = (lsIndex != -1) ? inputtrim.substr(0, lsIndex)+", " : "";
+              			filldatalist(str);
+              			inputcommas = currentcommas;
+              		}
+              		input.val(inputtrim);
+              	}
+              });
+            </script>
+          </div>
+          <div class="col-md-2">
+            <button class = "btn btn-default">Search</button>
           </div>
         </div>
-        <button class = "btn btn-default">Search</button>
       </div>
       <div class="container search-results">
         <h3>Search Results:</h3>
