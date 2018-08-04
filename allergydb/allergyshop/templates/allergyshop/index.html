@@ -9,7 +9,7 @@
     <title>The Allergen Filter</title>
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}">
-    <link href="css/index-style.css" rel="stylesheet">
+    <!-- <link href="css/index-style.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="{% static 'index-style.css' %}">
 
     <script src="{% static 'jquery-1.12.4.min.js' %}"></script>
@@ -31,6 +31,22 @@
     </header>
     <main>
       <div class = "container search-cat">
+        <div class= "row">
+          <div class="col-md-2">
+            <h4>Search Barcode:</h4>
+          </div>
+          <div class="col-md-2">
+            <div class = "input-group">
+              <input type = "text" class = "barcode-search form-control" placeholder = "Barcode">
+            </div>
+          </div>
+          <div class="col-md-8">
+          </div>
+        </div>
+        <button class = "bs btn btn-default">Search</button>
+        <div class = "row">
+          <h4 class="col-md-12">or</h4>
+        </div>
         <div class = "row">
           <div class="col-md-2">
             <h4>Product name:</h4>
@@ -59,22 +75,32 @@
               <option>Drinks</option>
             </select>
           </div>
-          <div class="col-md-2">
-            <h4>Barcode:</h4>
-          </div>
-          <div class="col-md-2">
-            <div class = "input-group">
-              <input type = "text" class = "form-control" placeholder = "Barcode">
-            </div>
+          <div class="col-md-4">
           </div>
         </div>
         <div class="allergens">
           <div class="row">
-            <h4 class="col-md-10">Ingredients to avoid:</h4>
-            <a href="#" class="col-md-2" onclick="unselect()">Unselect all</a>
+            <h4 class="col-md-10 col-xs-6">Ingredients to avoid:</h4>
+            <a href="#" class="col-md-2 col-xs-6" onclick="unselect()">Unselect all</a>
           </div>
           <div>
-            <ul id="allergens-list">
+            <input list="allergens-list" placeholder="Allergen">
+            <datalist id="allergens-list">
+              <option value="Gluten">
+              <option value="Crustacean">
+              <option value="Eggs">
+              <option value="Fish">
+              <option value="Peanuts">
+              <option value="Soybean">
+              <option value="Milk">
+              <option value="Nuts">
+              <option value="Celery">
+              <option value="Mustard">
+              <option value="Sesame">
+              <option value="Lupin">
+              <option value="Molluscs">
+            </datalist>
+            <!--<ul id="allergens-list">
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen0" name="gluten">Gluten</label></li>
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen1" name="crustacean">Crustacean</label></li>
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen2" name="eggs">Eggs</label></li>
@@ -88,7 +114,7 @@
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen10" name="sesame">Sesame</label></li>
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen11" name="lupin">Lupin</label></li>
               <li class="col-md-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="allergen12" name="molluscs">Molluscs</label></li>
-            </ul>
+            </ul>-->
           </div>
         </div>
         <button class = "btn btn-default">Search</button>
@@ -100,7 +126,7 @@
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
               <h3>{{ product.name }}</h3>
-              <img src="{{ product.picture }}" width="100px">
+              <img src="{{ product.picture }}" height="100px">
               <h4>Available in</h4>
               <ul>
                 <li><a href="#">Woolworths</a></li>

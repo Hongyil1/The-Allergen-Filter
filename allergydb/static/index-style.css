@@ -7,6 +7,10 @@
   line-height: 40px;
 }
 
+.bs {
+  margin-top: 10px;
+}
+
 .allergens {
   overflow: hidden;
   padding: 15px 0px 20px 0px;
@@ -52,9 +56,8 @@
 .result-items > li {
   padding-left: 0;
   padding-bottom: 15px;
-  pad
+  height: 300px;
 }
-
 .result-items > li > div {
   border: 1px solid #dddddd;
   border-radius: 5px;
