@@ -96,9 +96,10 @@
       <div class="container search-results">
         <h3>Search Results:</h3>
         <ul class="result-items">
-          <li class="col-md-3 col-sm-6 col-xs-12">
+		{% for product in products %}
+			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
+              <h3>{{ product.name }}</h3>
               <img src="{% static 'image/anzac-biscuit.jpg' %}" width="100px">
               <h4>Available in</h4>
               <ul>
@@ -107,61 +108,7 @@
               </ul>
             </div>
           </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
-              <img src="{% static 'image/anzac-biscuit.jpg' %}" width="100px">
-              <h4>Available in</h4>
-              <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
-              <img src="{% static 'image/anzac-biscuit.jpg' %}" width="100px">
-              <h4>Available in</h4>
-              <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
-              <img src="{% static 'image/anzac-biscuit.jpg' %}" width="100px">
-              <h4>Available in</h4>
-              <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
-              <img src="{% static 'image/anzac-biscuit.jpg' %}" width="100px">
-              <h4>Available in</h4>
-              <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-12">
-            <div class="col-md-12">
-              <h3>Anzac Biscuits</h3>
-              <img src="image/anzac-biscuit.jpg" width="100px">
-              <h4>Available in</h4>
-              <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
-              </ul>
-            </div>
-          </li>
+		{% endfor %}
         </ul>
       </div>
 

@@ -18,4 +18,5 @@ def product_detail(request, id):
 
 def index(request):
     context = {}
-    return render_to_response('allergyshop/index.html', context=context)
+    products = Product.objects.all()
+    return render_to_response('allergyshop/index.html', {'context': context, 'products': products})
