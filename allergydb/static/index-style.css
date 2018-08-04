@@ -7,42 +7,6 @@
   line-height: 40px;
 }
 
-.bs {
-  margin-top: 10px;
-}
-
-.allergens {
-  overflow: hidden;
-  padding: 15px 0px 20px 0px;
-}
-
-.allergens h4 {
-  padding-right: 0px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.allergens a {
-  padding-left: 0px;
-}
-
-.allergens ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0;
-}
-
-.allergens ul input {
-  position: relative;
-  top: 2px;
-  left: 0px;
-  margin-right: 10px;
-}
-
-.allergens li {
-  float: left;
-}
-
 .search-results > h3 {
   padding: 30px 0px 0px;
 }
@@ -56,9 +20,9 @@
 .result-items > li {
   padding-left: 0;
   padding-bottom: 15px;
-  height: 300px;
 }
 .result-items > li > div {
+  height: 300px;
   border: 1px solid #dddddd;
   border-radius: 5px;
 }
