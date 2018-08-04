@@ -1,7 +1,13 @@
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Allergen, Store, Product 
 from django.shortcuts import render_to_response
+<<<<<<< HEAD
 from django.db.models import Q
+=======
+from django.utils import timezone
+>>>>>>> 743d11c5687a70013363ff8eadda9a1ad816f255
 
 
 def listproducts(request, category_slug=None):
@@ -12,10 +18,14 @@ def listproducts(request, category_slug=None):
         products = Product.filter(category=category)
     return render(request, 'allergyshop/product/list.html', {'category': category, 'categories':categories, 'products': products})
 
-def product_detail(request, id):
-    product = get_object_or_404(Product, id=id)
-    return render(request, 'allergyshop/product/detail.html', {'product':product})
-# Create your views here.
+def product_detail(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    return render(request, 'allergyshop/detail.html', {'product':product})
+
+def product_comment(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    product.comment_set.create(comment_text=request.POST['comment'], username=request.POST['username'], pub_date=timezone.now())
+    return HttpResponseRedirect(reverse('product_detail', args=(product.id,)))
 
 def index(request):
 

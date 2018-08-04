@@ -1,0 +1,77 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Allergen Filter</title>
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}">
+    <!-- <link href="css/index-style.css" rel="stylesheet"> -->
+      <link rel="stylesheet" href="{% static 'detail-style.css' %}">
+
+    <script src="{% static 'jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'bootstrap-3.3.7/js/bootstrap.min.js' %}"></script>
+    <!--[if lt IE 9]>
+      <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+      <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-static-top">
+      	<div class="container">
+      		<div class="navbar-header">
+      			<a href="#" class="navbar-brand">The Allergen Filter</a>
+      		</div>
+      	</div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+    		<div class="product-detail col-md-12">
+    		  <h3>{{ product.name }}</h3>
+    		  <img src="{{ product.picture }}" height="300px">
+    		  <h4>Available in</h4>
+    		  <ul>
+    			<li><a href="#">Woolworths</a></li>
+    			<li><a href="#">Coles</a></li>
+    		  </ul>
+    		</div>
+
+        <div class="col-md-12">
+          <h4>Comments</h4>
+            <div class="col-md-12 comments-section">
+        {% for comment in product.comment_set.all %}
+        		<div class="col-md-12 comment-box">
+              <h6 class="username">{{ comment.username }}</h6>
+        		  <p>{{ comment.comment_text }}</p>
+        		</div>
+    		{% endfor %}
+        </div>
+
+        <form class="col-md-12" action="{% url 'product_comment' product.id %}" method="post">
+          <h4>Add a comment</h4>
+          {% csrf_token %}
+          <div class="add-comment">
+            <h5><label for="username">Username</label></h5>
+            <input type="text" name="username" class="form-control">
+            <h5><label for="comment">Comment</label></h5>
+            <textarea rows="4" cols="50" name="comment" class="form-control"></textarea>
+            <input type="submit" value="Comment" class="btn btn-default">
+          </div>
+        </form>
+
+    </div>
+    </div>
+
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+      <!--<script src="js/bootstrap.min.js"></script>-->
+    </main>
+    <footer>
+      - Made in 24 hours for UniHack Sydney 2018 -
+    </footer>
+  </body>
+</html>

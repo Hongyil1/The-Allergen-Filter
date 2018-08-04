@@ -1,0 +1,58 @@
+.product-detail {
+  padding-bottom: 30px;
+}
+
+.comments-section {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.comment-box {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 6px 15px;
+}
+
+.comment-box .username {
+  font-weight: bold;
+  font-size: 10pt;
+  margin-bottom: 3px;
+}
+
+.comment-box p {
+  font-size: 10pt;
+}
+
+form h4 {
+  font-size: 12pt;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+
+form h5 {
+  margin-bottom: 5px;
+}
+
+form label {
+  font-weight: 400;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+form .add-comment {
+  position: relative;
+  left: 10px;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+}
+
+footer {
+  font-size: 10pt;
+  margin-top: 40px;
+  padding: 8px 0;
+  text-align: center;
+  border-top: 1px solid #dddddd;
+}

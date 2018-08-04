@@ -14,22 +14,24 @@
 
     <script src="{% static 'jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'bootstrap-3.3.7/js/bootstrap.min.js' %}"></script>
-    <!--[if lt IE 9]>
-      <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-      <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <![endif]-->
   </head>
   <body>
     <header>
       <nav class="navbar navbar-inverse navbar-static-top">
       	<div class="container">
       		<div class="navbar-header">
-      			<a href="#" class="navbar-brand">The Allergen Filter</a>
+                    <a href="#" class="navbar-brand">The Allergen Filter</a>
       		</div>
       	</div>
       </nav>
     </header>
     <main>
+    <div class="container">
+        <div class="para">
+      <p>The Allergen Filter provides a valuable database for searching and retrieving information about foods and potential allergens contained in their ingredients. 
+      To begin, enter the product name or barcode along with any allergens that you have. Then click search.</p>
+        </div>
+    </div>
       <div class = "container search-cat">
         <div class= "row">
           <div class="col-md-2">
@@ -160,8 +162,13 @@
 		{% for result in results %}
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
+<<<<<<< HEAD
               <h3>{{ result.name }}</h3>
               <img src="{{ result.picture }}" height="100px">
+=======
+              <h3>{{ product.name }}</h3>
+              <a href="{% url 'product_detail' product.id %}"><img src="{{ product.picture }}" height="100px"></a>
+>>>>>>> 743d11c5687a70013363ff8eadda9a1ad816f255
               <h4>Available in</h4>
               <ul>
                 <li><a href="#">Woolworths</a></li>
