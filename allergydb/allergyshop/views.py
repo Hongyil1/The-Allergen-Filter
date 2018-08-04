@@ -3,11 +3,10 @@ from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Allergen, Store, Product 
 from django.shortcuts import render_to_response
-<<<<<<< HEAD
+
 from django.db.models import Q
-=======
+
 from django.utils import timezone
->>>>>>> 743d11c5687a70013363ff8eadda9a1ad816f255
 
 
 def listproducts(request, category_slug=None):
