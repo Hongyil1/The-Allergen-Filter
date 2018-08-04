@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ingredient, Allergen, Store, Category, Product
+from .models import Allergen, Store, Category, Product, Barcode
 
 class CategoryAdmin(admin.ModelAdmin):
    list_display = ['name']
@@ -18,9 +18,9 @@ class StoreAdmin(admin.ModelAdmin):
    list_display = ['name']
 admin.site.register(Store, StoreAdmin)
 
-class IngredientAdmin(admin.ModelAdmin):
-   list_display = ['name']
-admin.site.register(Ingredient, IngredientAdmin)
+class BarcodeAdmin(admin.ModelAdmin):
+    list_display = ['code']
+admin.site.register(Barcode, BarcodeAdmin)
 
 
 # Register your models here.
