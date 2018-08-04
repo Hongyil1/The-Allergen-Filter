@@ -18,10 +18,6 @@
   margin-bottom: 10px;
 }
 
-.allergens a {
-  padding-left: 0px;
-}
-
 .allergens ul {
   list-style: none;
   padding: 0px;
@@ -52,10 +48,10 @@
 .result-items > li {
   padding-left: 0;
   padding-bottom: 15px;
-  pad
 }
 
 .result-items > li > div {
   border: 1px solid #dddddd;
   border-radius: 5px;
+  padding-bottom: 30px;
 }
