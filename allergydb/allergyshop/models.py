@@ -44,6 +44,7 @@ class Product(models.Model):
     allergens = models.ManyToManyField(Allergen)
     stores = models.ManyToManyField(Store)
     barcode = models.CharField(max_length=250, db_index=True, default=None)
+    picture = models.CharField(max_length=250, db_index=True, default='random')
     def __str__(self):
         return self.name
 
