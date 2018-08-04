@@ -172,11 +172,10 @@
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
               <h3>{{ result.name }}</h3>
-              <img src="{{ result.picture }}" height="100px">
+              <a href="{% url 'product_detail' result.id %}"><img src="{{ result.picture }}" height="100px"></a>
               <h4>Available in</h4>
               <ul>
-                <li><a href="#">Woolworths</a></li>
-                <li><a href="#">Coles</a></li>
+                <li><a href="#">{{ result.stores }}</a></li>
               </ul>
             </div>
           </li>
@@ -188,13 +187,13 @@
       <!--<script src="js/bootstrap.min.js"></script>-->
     </main>
   </body>
-  <script>
+  <!-- <script>
     function unselect() {
       for (var i=0; i<13; i++){
         document.getElementById("allergen"+i).checked = false;
       }
     }
-  </script>
+  </script>-->
   <footer>
     - Made in 24 hours for UniHack Sydney 2018 -
   </footer>
