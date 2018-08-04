@@ -3,8 +3,38 @@
 }
 
 .navbar a {
+  color: white;
   font-size: 20pt;
   line-height: 40px;
+}
+
+.logo {
+  background-color: #13C42B;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #13C42B;
+  border-radius: 5px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 12px;
+}
+
+.inner-logo {
+  width: 32px;
+  height: 32px;
+  background-color: #13C42B;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.af {
+  position: relative;
+  top: -6px;
+  left: -2px;
+  font-size: 9pt;
+  color: white;
+  text-align: center;
+  font-family: 'Caveat', cursive;
 }
 
 .search-results > h3 {
@@ -25,4 +55,12 @@
   height: 300px;
   border: 1px solid #dddddd;
   border-radius: 5px;
+}
+
+footer {
+  font-size: 10pt;
+  margin-top: 40px;
+  padding: 8px 0;
+  text-align: center;
+  border-top: 1px solid #dddddd;
 }

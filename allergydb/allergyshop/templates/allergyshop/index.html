@@ -10,7 +10,8 @@
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}">
     <!-- <link href="css/index-style.css" rel="stylesheet"> -->
-      <link rel="stylesheet" href="{% static 'index-style.css' %}">
+    <link rel="stylesheet" href="{% static 'index-style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 
     <script src="{% static 'jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'bootstrap-3.3.7/js/bootstrap.min.js' %}"></script>
@@ -24,6 +25,11 @@
       <nav class="navbar navbar-inverse navbar-static-top">
       	<div class="container">
       		<div class="navbar-header">
+            <div class="logo">
+              <div class="inner-logo">
+                <a href="" class="af">AF<a href="">
+              </div>
+            </div>
       			<a href="#" class="navbar-brand">The Allergen Filter</a>
       		</div>
       	</div>
@@ -32,15 +38,15 @@
     <main>
       <div class = "container search-cat">
         <div class= "row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-2">
             <h4>Barcode:</h4>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class = "input-group">
               <input type = "text" class = "barcode-search form-control" placeholder = "Barcode">
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-2">
             <button class = "bs btn btn-default">Search</button>
           </div>
         </div>
@@ -48,18 +54,18 @@
           <h4 class="col-md-12">or</h4>
         </div>
         <div class = "row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-3">
             <h4>Product name:</h4>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3">
             <div class = "input-group">
               <input type = "text" class = "form-control" placeholder = "Search product...">
             </div>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 col-sm-3">
             <h4>Category:</h4>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3">
             <select class="form-control">
               <option>Fruit</option>
               <option>Vegetable</option>
@@ -79,10 +85,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-md-1 col-sm-2">
             <h4>Allergen:</h4>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-10">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
             <input type="text" list="allergens" id="authors" value="" placeholder="Allergens" class="form-control">
@@ -138,7 +144,7 @@
               });
             </script>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12">
             <button class = "btn btn-default">Search</button>
           </div>
         </div>
@@ -173,4 +179,7 @@
       }
     }
   </script>
+  <footer>
+    - Made in 24 hours for UniHack Sydney 2018 -
+  </footer>
 </html>
