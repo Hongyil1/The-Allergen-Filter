@@ -172,17 +172,18 @@
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
               <h3>{{ result.name }}</h3>
+			  <div class="form-row">
+			  <i>{{ result.category.name }}</i>
+			  </div>
+			  <div class="form-row">
               <a href="{% url 'product_detail' result.id %}"><img src="{{ result.picture }}" height="100px"></a>
-              <h4>Category</h4>
-              <ul>
-                <li><a href="#">{{ result.category.name }}</a></li>
-              </ul>
-			  <h4>Allergens</h4>
-              <ul>
+			  </div>
+              
+				<div class="form-row" style="padding:10px;">
 				{% for allergen in result.get_allergens %}
-                <li><a href="#">{{ allergen }}</a></li>
+				<img src="{% static allergen %}" height="35px">
 				{% endfor %}
-              </ul>
+				</div>
             </div>
           </li>
 		{% endfor %}

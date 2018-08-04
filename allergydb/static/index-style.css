@@ -55,7 +55,7 @@
   padding-bottom: 15px;
 }
 .result-items > li > div {
-  height: 300px;
+  min-height: 300px;
   border: 1px solid #dddddd;
   border-radius: 5px;
 }
