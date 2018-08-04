@@ -173,9 +173,15 @@
             <div class="col-md-12">
               <h3>{{ result.name }}</h3>
               <a href="{% url 'product_detail' result.id %}"><img src="{{ result.picture }}" height="100px"></a>
-              <h4>Available in</h4>
+              <h4>Category</h4>
               <ul>
-                <li><a href="#">{{ result.stores }}</a></li>
+                <li><a href="#">{{ result.category.name }}</a></li>
+              </ul>
+			  <h4>Allergens</h4>
+              <ul>
+				{% for allergen in result.get_allergens %}
+                <li><a href="#">{{ allergen }}</a></li>
+				{% endfor %}
               </ul>
             </div>
           </li>
