@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Allergen Filter</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index-style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-static-top">
+      	<div class="container">
+      		<div class="navbar-header">
+      			<a href="#" class="navbar-brand">The Allergen Filter</a>
+      		</div>
+      	</div>
+      </nav>
+    </header>
+    <main>
+      <div class = "container search-cat">
+        <div class = "row">
+          <div class="col-md-2">
+            <h4>Product name:</h4>
+          </div>
+          <div class="col-md-2">
+            <div class = "input-group">
+              <input type = "text" class = "form-control" placeholder = "Search product...">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4>Category:</h4>
+          </div>
+          <div class="col-md-2">
+            <select class="form-control">
+              <option>Fruit</option>
+              <option>Vegetable</option>
+              <option>Meat</option>
+              <option>Seafood</option>
+              <option>Deli</option>
+              <option>Bakery</option>
+              <option>Dairy</option>
+              <option>Eggs</option>
+              <option>Fridge</option>
+              <option>Pantry</option>
+              <option>Freezer</option>
+              <option>Drinks</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <h4>Barcode:</h4>
+          </div>
+          <div class="col-md-2">
+            <div class = "input-group">
+              <input type = "text" class = "form-control" placeholder = "Barcode">
+            </div>
+          </div>
+        </div>
+        <div class="allergens">
+          <div class="row">
+            <h4 class="col-md-10">Ingredients to avoid:</h4>
+            <a href="#" class="col-md-2" onclick="unselect()">Unselect all</a>
+          </div>
+          <div>
+            <ul id="allergens-list">
+              <li class="col-md-2"><label><input type="checkbox" id="allergen0" name="gluten">Gluten</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen1" name="crustacean">Crustacean</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen2" name="eggs">Eggs</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen3" name="fish">Fish</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen4" name="peanuts">Peanuts</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen5" name="soybean">Soybeans</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen6" name="milk">Milk</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen7" name="nuts">Nuts</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen8" name="celery">Celery</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen9" name="mustard">Mustard</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen10" name="sesame">Sesame</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen11" name="lupin">Lupin</label></li>
+              <li class="col-md-2"><label><input type="checkbox" id="allergen12" name="molluscs">Molluscs</label></li>
+            </ul>
+          </div>
+        </div>
+        <button class = "btn btn-default">Search</button>
+      </div>
+      <div class="container search-results">
+        <h3>Search Results:</h3>
+        <ul class="result-items">
+          <li class="col-md-3">
+            <div class="col-md-12">
+              <h3>Anzac Biscuits</h3>
+              <img src="image/anzac-biscuit.jpg" width="100px">
+              <h4>Available in</h4>
+              <ul>
+                <li>Woolworths</li>
+                <li>Coles</li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-md-3">
+            <div class="col-md-12">
+              <h3>Anzac Biscuits</h3>
+              <img src="image/anzac-biscuit.jpg" width="100px">
+              <h4>Available in</h4>
+              <ul>
+                <li>Woolworths</li>
+                <li>Coles</li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-md-3">
+            <div class="col-md-12">
+              <h3>Anzac Biscuits</h3>
+              <img src="image/anzac-biscuit.jpg" width="100px">
+              <h4>Available in</h4>
+              <ul>
+                <li>Woolworths</li>
+                <li>Coles</li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-md-3">
+            <div class="col-md-12">
+              <h3>Anzac Biscuits</h3>
+              <img src="image/anzac-biscuit.jpg" width="100px">
+              <h4>Available in</h4>
+              <ul>
+                <li>Woolworths</li>
+                <li>Coles</li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-md-3">
+            <div class="col-md-12">
+              <h3>Anzac Biscuits</h3>
+              <img src="image/anzac-biscuit.jpg" width="100px">
+              <h4>Available in</h4>
+              <ul>
+                <li>Woolworths</li>
+                <li>Coles</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </main>
+  </body>
+  <script>
+    function unselect() {
+      for (var i=0; i<13; i++){
+        document.getElementById("allergen"+i).checked = false;
+      }
+    }
+  </script>
+</html>
