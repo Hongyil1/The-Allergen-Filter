@@ -126,7 +126,7 @@
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
               <h3>{{ product.name }}</h3>
-              <img src="{{ product.picture }}" height="100px">
+              <a href="{% url 'product_detail' product.id %}"><img src="{{ product.picture }}" height="100px"></a>
               <h4>Available in</h4>
               <ul>
                 <li><a href="#">Woolworths</a></li>

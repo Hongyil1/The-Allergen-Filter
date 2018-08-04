@@ -50,6 +50,16 @@ class Product(models.Model):
 
     class Meta:
         ordering = ('name',)
+
+class Comment(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    comment_text = models.TextField()
+    username = models.CharField(max_length=250)
+    pub_date = models.DateTimeField()
+    approved = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.comment_text
        
 
     
