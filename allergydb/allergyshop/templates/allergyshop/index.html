@@ -42,17 +42,19 @@
     </div>
       <div class = "container search-cat">
         <div class= "row">
-          <div class="col-md-2 col-sm-2">
+          <form action="." method="GET">
+            <div class="col-md-2 col-sm-2">
             <h4>Barcode:</h4>
           </div>
           <div class="col-md-3 col-sm-4">
             <div class = "input-group">
-              <input type = "text" class = "barcode-search form-control" placeholder = "Barcode">
+              <input name="barcode_search" type = "text" class = "barcode-search form-control" placeholder = "Barcode">
             </div>
           </div>
           <div class="col-md-2 col-sm-2">
-            <button class = "bs btn btn-default">Search</button>
+            <button class = "bs btn btn-default" type="submit">Search</button>
           </div>
+          </form>
         </div>
 
         <div class = "row">

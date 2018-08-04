@@ -4,9 +4,7 @@
     <list default="true" id="0344847c-a550-48e6-aaf6-af991aeb73bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/db.sqlite3" afterPath="$PROJECT_DIR$/allergydb/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/models.py" afterPath="$PROJECT_DIR$/allergydb/allergyshop/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" afterPath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/views.py" afterPath="$PROJECT_DIR$/allergydb/allergyshop/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="520">
+              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -52,20 +50,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="779">
+              <caret line="61" column="71" lean-forward="true" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,15 +99,15 @@
         <option value="$PROJECT_DIR$/allergydb/allergyshop/urls.py" />
         <option value="$PROJECT_DIR$/allergydb/allergydb/urls.py" />
         <option value="$PROJECT_DIR$/../UniHack-2018 - Copy/allergydb/allergyshop/views.py" />
-        <option value="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" />
-        <option value="$PROJECT_DIR$/allergydb/allergyshop/models.py" />
         <option value="$PROJECT_DIR$/allergydb/allergyshop/views.py" />
+        <option value="$PROJECT_DIR$/allergydb/allergyshop/models.py" />
+        <option value="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="818" />
+    <option name="width" value="1077" />
     <option name="height" value="1090" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -267,7 +263,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
+    <frame x="818" y="0" width="1077" height="1090" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5653153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -311,6 +307,48 @@
     <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
@@ -320,9 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -330,7 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -338,7 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3250">
           <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -346,7 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -354,7 +386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -362,9 +393,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -406,9 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -416,7 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,7 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3250">
           <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -432,7 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,7 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -448,9 +470,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,7 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3250">
           <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,9 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,52 +544,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="22" column="42" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="520">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="e#633#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="61" column="71" lean-forward="true" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
           <folding />
         </state>
       </provider>
