@@ -1,0 +1,5 @@
+<ul>
+{% for recipe in food_info.hits %}
+	<li>{{ recipe.recipe.label }}</li>
+{% endfor %}
+</ul>
