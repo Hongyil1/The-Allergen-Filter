@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0344847c-a550-48e6-aaf6-af991aeb73bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Celery.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Cereal.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Crustacean.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Egg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Fish.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Gluten.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Lupin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Milk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Mustard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Nuts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Peanuts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Sesame.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Shellfish.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Soy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Soybean.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Sulphite.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Wheaat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allergydb/static/image/Wheat.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allergydb/static/image/anzac-biscuit.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/db.sqlite3" afterPath="$PROJECT_DIR$/allergydb/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/admin.py" afterPath="$PROJECT_DIR$/allergydb/allergyshop/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/models.py" afterPath="$PROJECT_DIR$/allergydb/allergyshop/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/detail.html" afterPath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" afterPath="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allergydb/static/index-style.css" afterPath="$PROJECT_DIR$/allergydb/static/index-style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,39 +25,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+            <state relative-caret-position="325">
+              <caret line="155" column="21" lean-forward="true" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1971#1977#1" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +38,8 @@
       <file leaf-file-name="index-style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="130">
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -100,18 +48,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+            <state relative-caret-position="259">
+              <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+            <state relative-caret-position="129">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,13 +100,12 @@
         <option value="$PROJECT_DIR$/allergydb/allergyshop/views.py" />
         <option value="$PROJECT_DIR$/allergydb/allergyshop/models.py" />
         <option value="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html" />
-        <option value="$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/detail.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="818" />
+    <option name="width" value="1077" />
     <option name="height" value="1090" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -195,6 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,8 +193,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,10 +261,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
+    <frame x="818" y="0" width="1077" height="1090" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27891892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5653153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21293199" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -345,48 +292,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4030">
-          <caret line="155" column="21" lean-forward="true" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -633,7 +538,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UniHack-2018 - Copy/allergydb/allergyshop/views.py" />
+    <entry file="file://$PROJECT_DIR$/../UniHack-2018 - Copy/allergydb/allergyshop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/allergydb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -644,57 +555,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+        <state relative-caret-position="129">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/allergydb/static/index-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="130">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/detail.html">
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1971#1977#1" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/admin.py">
+    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/templates/allergyshop/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allergydb/allergyshop/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="155" column="21" lean-forward="true" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
           <folding />
         </state>
       </provider>

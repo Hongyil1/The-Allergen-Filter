@@ -58,7 +58,7 @@ class Product(models.Model):
 
     def get_allergens(self):
         if self.allergens:
-            return [f'image/{allergen}.jpg' for allergen in self.allergens.split(' ')]
+            return [f'image/{allergen}.jpg' for allergen in self.allergens.split(' ') if allergen != 'Nil']
         return []
 
     class Meta:
