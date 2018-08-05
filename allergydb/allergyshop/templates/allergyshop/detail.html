@@ -23,10 +23,10 @@
             <div class="navbar-brand">
             <div class="logo">
               <div class="inner-logo">
-                <a href="" class="af">AF<a href="">
+                <a href="/allergyshop" class="af">AF<a href="">
               </div>
             </div>
-      			<a href="#" >The Allergen Filter</a>
+      			<a href="/allergyshop" >The Allergen Filter</a>
           </div>
       		</div>
       	</div>
@@ -36,10 +36,28 @@
       <div class="container">
     		<div class="product-detail col-md-12">
     		  <h3>{{ product.name }}</h3>
-    		  <img src="{{ product.picture }}" height="300px">
+    		  <div class="form-row">
+			  <i>{{ product.category.name }}</i>
+			  </div>
+			  <div class="form-row">
+              <img src="{{ product.picture }}" height="300px">
+			  </div>
+              
+				<div class="form-row" style="padding:10px;">
+				{% for allergen in product.get_allergens %}
+				<img src="{% static allergen %}" height="35px">
+				{% endfor %}
+				</div>
     		  <h4>Available in</h4>
     		  <ul style="list-style-type: none;">
-				<li style=""><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&emsp;<a href="#">{{ product.stores }}</a></li>
+				{% for store in product.get_stores %}
+				<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&emsp;<a href="#">{{ store }}</a></li>
+				{% endfor %}
+    		  </ul>
+			  <h4>Ingredients</h4>
+    		  <ul>
+				<li>{{ product.ingredients }}</li>
+
     		  </ul>
     		</div>
 
