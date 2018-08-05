@@ -49,26 +49,29 @@
 				{% endfor %}
 				</div>
     		  <h4>Available in</h4>
-    		  <ul>
+    		  <ul style="list-style-type: none;">
 				{% for store in product.get_stores %}
-				<li><a href="#">{{ store }}</a></li>
+				<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&emsp;<a href="#">{{ store }}</a></li>
 				{% endfor %}
     		  </ul>
 			  <h4>Ingredients</h4>
     		  <ul>
 				<li>{{ product.ingredients }}</li>
+
     		  </ul>
     		</div>
 
-        <div class="col-md-12">
-          <h4>Comments</h4>
+            <div class="col-md-12">
+            <h4>Comments</h4>
             <div class="col-md-12 comments-section">
-        {% for comment in product.comment_set.all %}
+            {% for comment in product.comment_set.all %}
         		<div class="col-md-12 comment-box">
-              <h6 class="username">{{ comment.username }}</h6>
-        		  <p>{{ comment.comment_text }}</p>
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <h6 class="username" style="display:inline;">{{ comment.username }}</h6>
+        		    <p>{{ comment.comment_text }}</p>
         		</div>
     		{% endfor %}
+            </div>
         </div>
 
         <form class="col-md-12" action="{% url 'product_comment' product.id %}" method="post">
