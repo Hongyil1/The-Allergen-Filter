@@ -165,34 +165,48 @@
 
 
       <!--Search Results-->
-      <div class="container search-results">
+      <div class="container search-results" id = "res">
+      {% if results.count == 0 %}
+        <h3>No Results Found</h3>
+      {% else %}
         <h3>Search Results:</h3>
         <ul class="result-items">
 		{% for result in results %}
 			<li class="col-md-3 col-sm-6 col-xs-12">
             <div class="col-md-12">
               <h3>{{ result.name }}</h3>
-			  <div class="form-row">
-			  <i>{{ result.category.name }}</i>
-			  </div>
-			  <div class="form-row">
               <a href="{% url 'product_detail' result.id %}"><img src="{{ result.picture }}" height="100px"></a>
-			  </div>
-              
-				<div class="form-row" style="padding:10px;">
+              <h4>Category</h4>
+              <ul>
+                <li><a href="#">{{ result.category.name }}</a></li>
+              </ul>
+			  <h4>Allergens</h4>
+              <ul>
 				{% for allergen in result.get_allergens %}
-				<img src="{% static allergen %}" height="35px">
+                <li><a href="#">{{ allergen }}</a></li>
 				{% endfor %}
-				</div>
+              </ul>
             </div>
           </li>
 		{% endfor %}
         </ul>
+        {%  endif %}
       </div>
-
+      <script>
+        if (window.location.href.indexOf("?") > -1) {
+          //document.write("I'm here");
+          document.getElementById('res').style = "display: block";
+        } else {
+          //document.write("I'm not  here");
+          document.getElementById('res').style = "display: none";
+        }
+      </script>
       <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
       <!--<script src="js/bootstrap.min.js"></script>-->
     </main>
+    <footer>
+      - Made in 24 hours for UniHack Sydney 2018 -
+    </footer>
   </body>
   <!-- <script>
     function unselect() {
@@ -201,7 +215,5 @@
       }
     }
   </script>-->
-  <footer>
-    - Made in 24 hours for UniHack Sydney 2018 -
-  </footer>
+
 </html>
