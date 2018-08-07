@@ -32,5 +32,13 @@ Input ***localhost:8000*** in your browser.
 This project is licensed under the MIT License
 
 ## Demo
-<img width="544" alt="image 1" src="https://user-images.githubusercontent.com/22671087/42612132-e32118aa-85dc-11e8-8c68-e9798ad915f6.PNG">
+
+Barcode Search:
+<img width="948" alt="bar_code" src="https://user-images.githubusercontent.com/22671087/43808072-9424bd5c-9aee-11e8-8e7e-8c6600f66e84.PNG">
+
+Advance Search:
+<img width="947" alt="advance_search" src="https://user-images.githubusercontent.com/22671087/43808080-9bed2e34-9aee-11e8-9154-8858b0eb2240.PNG">
+
+Comment Function:
+<img width="944" alt="comment" src="https://user-images.githubusercontent.com/22671087/43808082-9d24e878-9aee-11e8-9860-fbffc4b0b101.PNG">
 
