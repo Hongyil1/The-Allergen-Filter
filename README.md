@@ -15,8 +15,10 @@ pip install -r /path/to/requirements.txt
 
 ## How to use
 ```
-mpiexec -n number_of_process python3 Main.py -f your_input_file
+cd The-Allergen-Filter\allergydb\
+python manage.py runserver
 ```
+Input ***localhost:8000*** in your browser.
 
 ## Authors
 
